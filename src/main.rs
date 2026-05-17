@@ -1,19 +1,21 @@
+// this is simple and user freandly Rust bassed simple old school style chatbot
+
 use std::path::Path; // path input output
 use std::{thread, time::Duration}; // this for sleeping
 
-mod chat;
-mod config;
-mod colors;
+mod chat; // This for chat
 mod clear; // This for clear function
-mod user_variable;
+mod colors; // This for colors
+mod config; // This for config
+mod user_variable; // THis for Varble
 
 fn main() {
     let config_path = "config.txt";
 
-    if !Path::new(config_path).exists() { 
+    if !Path::new(config_path).exists() {
         println!("First setup?"); // setup
         config::config(); // This calling config function
-         // printinng the escape codes and flush stdout to ensure it happens immediately
+        // printinng the escape codes and flush stdout to ensure it happens immediately
 
         clear::clear();
         println!("Terminal cleared!");
@@ -30,7 +32,6 @@ fn main() {
         println!("Welcome Back!");
 
         clear::clear();
-
 
         chat::chat();
     }

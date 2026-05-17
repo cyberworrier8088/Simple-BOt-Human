@@ -30,31 +30,25 @@ Make sure you have Rust installed on your computer. If you don't, download and i
    ```
 # 2
 #### demo using exe
-1. click Link []()
-That's it! 🎉
+1. click Link [demo](https://github.com/cyberworrier8088/Simple-BOt-Human/releases/download/demo/Simple-BOt-Human.exe)
+That's it! 
 
 ---
 
-## 💬 Things you can say to the Bot
+##  Things you can say to the Bot
 
 Once the bot starts, try typing these words/phrases:
 
-* `hello` or `hi` — Greet your bot 👋
+* `hello` or `hi` — Greet your bot 
 * `how are you` — Ask how the bot is doing 
 * `who are you` — Ask the bot's name
-* `my location` or `location` — Ask the bot where you live 📍
-* `my hobby` or `hobby` — Ask the bot what you like to do 🎨
-* `favorite color` — Ask the bot what color you love 🎨
-* `my age` or `age` — Ask how old you are 🎂
-* `joke` — Get a programmer joke! 😂
+* `my location` or `location` — Ask the bot where you live 
+* `my hobby` or `hobby` — Ask the bot what you like to do 
+* `favorite color` — Ask the bot what color you love 
+* `my age` or `age` — Ask how old you are 
+* `joke` — Get a programmer joke! 
 * `help` — Show all the things you can ask
-* `exit` or `bye` — Say goodbye and close the bot 🚪
+* `exit` or `bye` — Say goodbye and close the bot 
+* You can easly add more
 
 ---
-
-## 📂 Project Files
-
-* **`src/main.rs`** — The main entry point of the app.
-* **`src/chat.rs`** — Handles all the chat logic and responses.
-* **`src/config.rs`** — Sets up your profile for the first time.
-* **`config.txt`** — Created after setup to save your profile!

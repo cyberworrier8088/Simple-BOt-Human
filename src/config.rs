@@ -1,11 +1,9 @@
-use std::io;
-use std::fs;
-use std::io::Write;
 use crate::colors;
-
+use std::fs;
+use std::io;
+use std::io::Write;
 
 pub fn config() {
-
     // This for user name
     let mut name = String::new();
     print!("Enter You are name: ");
@@ -28,13 +26,17 @@ pub fn config() {
     let gender_enhnaced = gender.trim().to_lowercase();
 
     let gender = match gender_enhnaced.as_str() {
-        "boy" | "male" | "man" | "m" => "Boy", // boy
-        "girl" | "female" | "woman" | "f" => "Girl", // girl
+        "boy" | "male" | "man" | "m" => "Boy",             // boy
+        "girl" | "female" | "woman" | "f" => "Girl",       // girl
         "nonbinary" | "non-binary" | "nb" => "Non-Binary", // non-binary
-        "trans" | "transgender" => "Transy", // transgender
-        "other" | "custom" => "Non", // other
+        "trans" | "transgender" => "Transy",               // transgender
+        "other" | "custom" => "Non",                       // other
         _ => {
-            println!("{}Invalid gender! Defaulting to Other.{}",colors::RED, colors::RESET); // Invalid gender
+            println!(
+                "{}Invalid gender! Defaulting to Other.{}",
+                colors::RED,
+                colors::RESET
+            ); // Invalid gender
             "Other"
         }
     };
@@ -58,7 +60,7 @@ pub fn config() {
     io::stdin().read_line(&mut fav_color).unwrap();
 
     // Data formating
-    let data = format!{
+    let data = format! {
         "name={}\nage={}\ngender={}\nlocation={}\nhobby={}\nfav_color={}",
         name.trim(),
         age.trim(),
@@ -67,10 +69,15 @@ pub fn config() {
         hobby.trim(),
         fav_color.trim(),
     };
+    // checking error
     if let Err(e) = fs::write("config.txt", data) {
         println!("{}Error saving config: {}{}", colors::RED, e, colors::RESET);
         println!("{}Pls check: {}{}", colors::RED, e, colors::RESET);
     } else {
-        println!("\n{}✓ Configuration Saved Successfully!{}", colors::GREEN, colors::RESET);
+        println!(
+            "\n{}✓ Configuration Saved Successfully!{}",
+            colors::GREEN,
+            colors::RESET
+        );
     }
 }
