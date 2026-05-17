@@ -1,4 +1,4 @@
-# 🤖 Simple-BOt-Human
+#  Simple-BOt-Human
 
 A very simple, lightweight, and fun command-line chatbot written in Rust! 🦀
 
@@ -6,7 +6,7 @@ This chatbot gets to know you, remembers your details, and chats with you right 
 
 ---
 
-## 🌟 What does it do?
+##  What does it do?
 
 1. **First Setup:** It asks for your name, age, gender, location, favorite hobby, and favorite color.
 2. **Remembers You:** It saves your answers in a file named `config.txt` so it never forgets!
@@ -14,13 +14,13 @@ This chatbot gets to know you, remembers your details, and chats with you right 
 
 ---
 
-## 🚀 How to Run (Step-by-Step)
+##  How to Run (Step-by-Step)
 
 Follow these simple steps:
 # 1
 ### 1. Install Rust
 Make sure you have Rust installed on your computer. If you don't, download and install it:
-👉 **[rustup.rs (Click to Download)](https://rustup.rs/)**
+ **[rustup.rs (Click to Download)](https://rustup.rs/)**
 
 ### 2. Run the Bot
 1. Open your **Terminal** (or Command Prompt) inside this project folder.
